@@ -29,7 +29,7 @@ Esta é uma versão alfa destinada a testes. O app foi instalado e iniciado em u
 - Seleção dos modos MAIN implementados pelo FTX-1.
 - Ajustes rápidos de RF POWER (SPA-1), D-LEVEL, NB e DNR.
 - Leitura e gravação manual de parâmetros EX pelo código CAT.
-- Compilação Android Debug automatizada pelo GitHub Actions; o APK fica disponível como artefato da execução.
+- Compilação Android Debug automatizada pelo GitHub Actions; o APK fica disponível como artefato da execução e, nas versões marcadas com tag `v*`, como download na aba **Releases**.
 
 ### Requisitos
 
@@ -77,7 +77,7 @@ O menu avançado permite informar um código EX, ler o valor atual e enviar um v
 
 ### Compilação automatizada
 
-O GitHub Actions executa `assembleDebug` em pushes, pull requests e execuções manuais. O resultado é um APK de depuração armazenado como artefato da execução; não é um APK assinado para distribuição de produção.
+O GitHub Actions executa `assembleDebug` em pushes para `main`, pull requests e execuções manuais. O APK de depuração fica como artefato da execução. Ao enviar uma tag no formato `v*` (por exemplo, `v0.1a`), o workflow também cria uma GitHub Release e anexa `app-debug.apk`. É uma build de depuração para testes, não um APK assinado para distribuição de produção.
 
 ### Licença
 
@@ -103,7 +103,7 @@ This is an experimental alpha release for testing. The app has been installed an
 - Available FTX-1 MAIN operating modes.
 - Quick controls for RF POWER (SPA-1), D-LEVEL, NB, and DNR.
 - Manual reading and writing of EX parameters by CAT code.
-- GitHub Actions builds a debug APK and publishes it as a workflow artifact.
+- GitHub Actions builds a debug APK and uploads it as a workflow artifact. Version tags matching `v*` also create a GitHub Release with the APK attached.
 
 ### Requirements and installation
 
