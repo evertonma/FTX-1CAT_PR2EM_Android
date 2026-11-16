@@ -63,4 +63,5 @@ jobs:
           gh release create "${GITHUB_REF_NAME}" \
             release-assets/app-debug.apk \
             --title "FTX-1 CAT Mobile ${GITHUB_REF_NAME}" \
+            --prerelease \
             --notes "Debug APK for ${GITHUB_REF_NAME}. This is experimental alpha software provided without warranties; use at your own risk. Read README.md and DISCLAIMER.md for requirements and limitations."

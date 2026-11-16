@@ -4,6 +4,8 @@
 ![Platform: Android](https://img.shields.io/badge/platform-Android-green)
 ![License: PolyForm Noncommercial](https://img.shields.io/badge/license-PolyForm%20Noncommercial-blueviolet)
 
+[Baixar APK 0.1a](https://github.com/evertonma/FTX-1CAT_PR2EM_Android/releases/download/v0.1a/app-debug.apk)
+
 > Aplicativo Android experimental para controlar algumas funções e parâmetros do transceptor Yaesu FTX-1 pela interface CAT usando USB OTG.
 >
 > **Versão 0.1a — Alfa, em testes.** Esta versão é fornecida sem garantias. O uso é por conta e risco do usuário. Leia [Aviso e limitações](DISCLAIMER.md) antes de conectar o aparelho ao rádio.
