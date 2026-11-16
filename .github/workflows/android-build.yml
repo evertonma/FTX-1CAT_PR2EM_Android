@@ -47,6 +47,9 @@ jobs:
     permissions:
       contents: write
     steps:
+      - name: Check out tag
+        uses: actions/checkout@v4
+
       - name: Download APK artifact
         uses: actions/download-artifact@v4
         with:
